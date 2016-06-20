@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style1.css">
-  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb:http://www.facebook.com/2008/fbml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb:http://www.facebook.com/2008/fbml">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?language=zh-TW&key=AIzaSyALElAbcPdp47CszdlGTMO97QjIB5J1QGc"></script>
   <title>停車Easy Go</title>
@@ -97,7 +97,7 @@
           lng: d.E
         },
         map: map,
-        title: d.name
+        title: d.NAME
       });
 
       marker.addListener('click', function() {
@@ -141,7 +141,8 @@
             map.setCenter(results[0].geometry.location);
             searchMarker.setMap(map);
             searchMarker.setPosition(results[0].geometry.location);
-            infoWindow.setContent(area);
+            infoWindow.setContent(area); 
+            //infoWindow 會在地圖上方的指定位置，於彈出式視窗中顯示內容 (通常是文字或影像
             infoWindow.open(map, searchMarker);
             map.setZoom(13);
           }
