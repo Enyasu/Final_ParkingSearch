@@ -25,7 +25,7 @@
   var searchMarker = new google.maps.Marker();
   var geolocMarker = new google.maps.Marker({
     icon: {
-      url: 'http://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
+      url: 'https://chadkillingsworth.github.io/geolocation-marker/images/gpsloc.png',
       size: new google.maps.Size(34, 34),
       scaledSize: new google.maps.Size(17, 17),
       origin: new google.maps.Point(0, 0),
@@ -37,7 +37,7 @@
   function loadData() {
     $.ajax({
       type: 'GET',
-      url: 'http://xml2json.newsfeed.tw/?url=http%3A%2F%2Fxml11.kctmc.nat.gov.tw%3A8080%2Fxmldata%2FParking.xml',
+      url: 'https://xml2json.newsfeed.tw/?url=http%3A%2F%2Fxml11.kctmc.nat.gov.tw%3A8080%2Fxmldata%2FParking.xml',
       success: function(data) {
         parkData = data.NewDataSet.Data;
         $.event.trigger({
@@ -244,7 +244,7 @@
     <div id="googleMap" class="map"></div>
     <div class="footer">
       <a href="team.html">Copyright © 2016 NUKIM Enya & Hobby All rights reserved</a></br>
-      Open data source：<a href="http://data.kaohsiung.gov.tw/Opendata/DetailList.aspx?CaseNo1=AP&CaseNo2=12&Lang=C">Open Data.Kaohsiung 停車場格位資訊</a>
+      Open data source：<a href="https://data.kaohsiung.gov.tw/Opendata/DetailList.aspx?CaseNo1=AP&CaseNo2=12&Lang=C">Open Data.Kaohsiung 停車場格位資訊</a>
     </div>
   </div>
 </body>
